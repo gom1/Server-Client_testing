@@ -15,7 +15,7 @@
 import sys
 import bluetooth
 
-uuid = "1e0ca4ea-299d-4335-93eb-27fcfe7fa848"
+uuid = "08C2B2EF-7C87-3D00-0CDC-9A2ADC420BFF"
 service_matches = bluetooth.find_service( uuid = uuid )
 
 if len(service_matches) == 0:

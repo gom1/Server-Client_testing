@@ -26,7 +26,7 @@ server_sock.bind(("",port))
 server_sock.listen(1)
 print "listening on port %d" % port
 
-uuid = "1e0ca4ea-299d-4335-93eb-27fcfe7fa848"
+uuid = "08C2B2EF-7C87-3D00-0CDC-9A2ADC420BFF"
 bluetooth.advertise_service( server_sock, "FooBar Service", uuid )
 
 client_sock,address = server_sock.accept()
