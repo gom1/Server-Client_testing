@@ -1,7 +1,7 @@
 
 import bluetooth
 
-target_name = "AOSP on HammerHead"
+target_name = "ROSIE Surface"
 target_address = None
 
 nearby_devices = bluetooth.discover_devices()
@@ -9,6 +9,7 @@ nearby_devices = bluetooth.discover_devices()
 for bdaddr in nearby_devices:
     if target_name == bluetooth.lookup_name( bdaddr ):
         target_address = bdaddr
+        print target_address
         break
 
 if target_address is not None:
