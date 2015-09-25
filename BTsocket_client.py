@@ -1,6 +1,6 @@
 import socket
 
-serverMACAddress = '00:1f:e1:dd:08:3d'
+serverMACAddress = 'C0:33:5E:22:C3:68'
 port = 3
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 s.connect((serverMACAddress,port))
